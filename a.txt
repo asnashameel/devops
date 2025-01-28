@@ -1,0 +1,360 @@
+    1  git devops
+    2  git devops/git
+    3  cd devops/git
+    4  ls
+    5  cd learnGitforUST/
+    6  git log
+    7  cd devops/git/
+    8  ls
+    9  cd learnGitforUST/
+   10  rm - rf learnGitforUST/
+   11  rm - rflearnGitforUST/
+   12  rm - rf learnGitforUST/
+   13  rm -rf learnGitforUST/
+   14  ls
+   15  cd ..
+   16  rm -rf learnGitforUST/
+   17  ls
+   18  git clone git@github.com:asnashameel/learnGitforUST.git
+   19  ls
+   20  git add .
+   21  cd learnGitforUST/
+   22  git branch
+   23  git log --oneline
+   24  mkdir ustgit
+   25  ls
+   26  ls -a
+   27  git init
+   28  ls
+   29  cd ustgit/
+   30  ls
+   31  git add .
+   32  git commit -m "init"
+   33  git log --oneline
+   34  git add .
+   35  git commit -m "M1"
+   36  git add .
+   37  git commit -m "M2"
+   38  git add .
+   39  git commit -m "M3"
+   40  git log --oneline
+   41  git checkout -b feature
+   42  git branch
+   43  git add .
+   44  git commit -m "f1"
+   45  git add .
+   46  git commit -m "f2"
+   47  git log --oneline
+   48  cat Branch.txt 
+   49  git checkout main
+   50  cat Branch.txt 
+   51  git merge feature
+   52  cat Branch.txt 
+   53  git checkout feature
+   54  git add .
+   55  git commit -m "f3"
+   56  git checkout main
+   57  git add .
+   58  git commit -m "m4"
+   59  git log --oneline
+   60  git checkout feature
+   61  git log --oneline
+   62  git checkout main
+   63  git merge feature
+   64  git log --oneline
+   65  git checkout feature
+   66  git add .
+   67  git commit -m "f4"
+   68  git checkout main
+   69  git merge feature
+   70  git mergetool
+   71  ls
+   72  rm -rf Branch.txt.orig
+   73  ls
+   74  cd devops/git
+   75  ls
+   76  cd learnGitforUST/
+   77  git status
+   78  git add .
+   79  git commit -m "v1"
+   80  code restore.txt
+   81  git restore .
+   82  git restore --worktree ./restore.txt
+   83  git add .
+   84  git commit -m "v2"
+   85  git restore .
+   86  git diff
+   87  git diff --cached
+   88  rm -rf ustgit/
+   89  mkdir learngit
+   90  cd learngit/
+   91  ls
+   92  ls -a
+   93  git init
+   94  cd .git/
+   95  cat HEAD
+   96  ls -ltr
+   97  cst config
+   98  cat config
+   99  /.gitconfig
+  100  cat ~/.gitconfig
+  101  cat description
+  102  cd ..
+  103  cd ../cd ..
+  104  cd ../ ..
+  105  cd ../..
+  106  mkdir Testust
+  107  cd 
+  108  cd Testust
+  109  git init
+  110  echo "Hello World"
+  111  echo "Hello World" >> ust.txt
+  112  ls
+  113  git status
+  114  git add .
+  115  git status
+  116  git commit -m "A1"
+  117  cd..
+  118  mkdir Myust
+  119  cd Myust
+  120  cd..
+  121  cd ..
+  122  mkdir Myust
+  123  mkdir myust
+  124  cd Myust
+  125  cd myust
+  126  cd myust/
+  127  cd devops/testust/
+  128  cd ..
+  129  cd myust/
+  130  git commit --amend
+  131  ls
+  132  echo "hello new change" >> hello.txt
+  133  git add .
+  134  git commit -m "hello"
+  135  git commit --amend
+  136  git commit -h
+  137  git commit --f43c1ac --amend
+  138  git tag 
+  139  git log
+  140  git tag -a "this" 2dccb7e -m asnashameel
+  141  git log
+  142  git show @author
+  143  git tag d0ec2 "committed" -m asna 
+  144  git tag -a @author d0ec2 -m asna
+  145  git show @author
+  146  git tag -a @author d0ec2 -m asna
+  147  git show @author
+  148  git branch
+  149  git checkout -b f3
+  150  git checkout feature1
+  151  git checkout f3
+  152  echo "text" >> text.txt
+  153  git add .
+  154  git commit -m "committ" 
+  155  git checkout master
+  156  git branch -d f3
+  157  git merge f3
+  158  git branch -d f3
+  159  history
+  160  git -v
+  161  cd ..
+  162  cd devops
+  163  mkdir Rebase
+  164  cd Rebase
+  165  echo "M1" >> file.txt
+  166  git add .
+  167  cd ..
+  168  cd myust
+  169  mkdir Rebase
+  170  echo "M1" >> file.txt
+  171  git add .
+  172  git commit -m "M1"
+  173  echo "M2" file.txt
+  174  git add .
+  175  git commit -m "M2"
+  176  echo "M2" >> file.txt
+  177  git add .
+  178  git commit -m "M2"
+  179  echo "m3" >> file.txt
+  180  git add .
+  181  git commit -m "M3"
+  182  git checkout -b fea1
+  183  echo "f1" >> file.txt
+  184  git add .
+  185  git commit -m "f1"
+  186  echo "f2" >> file.txt
+  187  git add .
+  188  git commit -m "f2"
+  189  git checkout -b newfeature
+  190  git checkout fea1
+  191  git rebase master
+  192  git checkout master
+  193  echo "m4" >> file.txt
+  194  git add .
+  195  git commit -m "m4"
+  196  git log
+  197  git checkout fea1
+  198  git log
+  199  git rebase master
+  200  cd ..
+  201  cd --
+  202  mkdir rebase
+  203  git init
+  204  cd rebase
+  205  echo "M1" >> file.txt
+  206  git add .
+  207  git commit -m "M1"
+  208  echo "M2" >> file.txt
+  209  git add .
+  210  git commit -m "M2"
+  211  echo "M3" >> file.txt
+  212  git add .
+  213  git commit -m "M3"
+  214  git checkout -b feature
+  215  echo "f2" >> hello.txt
+  216  git add .
+  217  git commit -m "f2"
+  218  echo "f1" >> hello.txt
+  219  git add .
+  220  git commit -m "f1"
+  221  git rebase master
+  222  git checkout feature
+  223  git checkout master
+  224  git rebase master
+  225  git log --oneline
+  226  git checkout feature
+  227  git log --oneline
+  228  cd --
+  229  clear
+  230  cd --
+  231  cd ../..
+  232  cd ..
+  233  vi file.txt
+  234  ls
+  235  vi file1.txt 
+  236  ssh user@[200~saceh1iv3
+  237  ssh user@172.21.26.227/20
+  238  ssh user@172.21.26.227
+  239  cd ..
+  240  cd learn-git-app/
+  241  git checkout -b new-ui
+  242  git push origin new-ui
+  243  git lfs install
+  244  git lfs track "*.jpg"
+  245  git lfs track "*.png"
+  246  git add .gitattributes
+  247  git add large-image.png
+  248  git add .
+  249  git commit -S -m  "lfs added"
+  250  git push origin main
+  251  echo "file" >> image.png
+  252  git add image.png
+  253  git commit -m "add project image"
+  254  git push origin main
+  255  git fetch origin
+  256  git pull origin main --rebase
+  257  git mergetool
+  258  git config --global merge.tool vscode
+  259  git config --global mergetool.vscode.cmd "code --wait $MERGED"~
+  260  git mergetool
+  261  git config --global mergetool.prompt false
+  262  git mergetool
+  263  echo "imagefile" >> image.png
+  264  git push origin main
+  265  git checkout main
+  266  git checkout main
+  267  git stash
+  268  git checkout main
+  269  git pull
+  270  git checkout main
+  271  cd ..
+  272  cd learn-git-app/
+  273  git checkout main
+  274  echo "image" >> image.png
+  275  git add image.png
+  276  git commit -m "image added"
+  277  git push origin main
+  278  git lfs install
+  279  git lfs track "*.png"
+  280  git add .gitattributes image.png
+  281  git commit -m "Track image"
+  282  git push origin main
+  283  cd .git/hooks
+  284  touch pre-commit
+  285  chmod +x pre-commit
+  286  chmod +X pre-commit
+  287  chmod +x pre-commit
+  288  nano pre-commit
+  289  code pre-commit
+  290  chmod +x pre-commit
+  291  git commit -m "Test pre-commit hook"
+  292  cd ..
+  293  cd ..
+  294  git commit -m "Test pre-commit hook"
+  295  git add .
+  296  git commit -m "fixed trailing spaces"
+  297  find . -type f \( -name "*.py" \) -exec sed -i 's/[[:blank:]]*$//' {} +
+  298  cd ..
+  299  cd learn-git-app/
+  300  ls -a
+  301  cd .git
+  302  git hooks/
+  303  ls -a
+  304  cd hooks/
+  305  ls 
+  306  code pre-commit
+  307  cd ..
+  308  cd ..
+  309  git add .
+  310  git commit -m "testing git hooks"
+  311  git add .
+  312  git commit -m "testing git hooks"
+  313  cd ..
+  314  cd learn-git-app/.git/hooks/
+  315  ls 
+  316  chmod +x pre-commit
+  317  cd ..
+  318  cd ..
+  319  git add .
+  320  git commit -m "testing hooks"
+  321  git config --global core.autocrlf true
+  322  git add .
+  323  git commit -m "testing hooks"
+  324  git add .
+  325  git commit -m "testing hooks"
+  326  git status
+  327  git add .
+  328  git commit -m "testing hooks"
+  329  history
+  330  cd ..
+  331  vi 001_Hello_world.sh
+  332  git clone git@github.com:asnashameel/devops-linux.git
+  333  history
+  334  git add .
+  335  git config --global user.name="asnashameel"
+  336  git config --global user.name = "asnashameel"
+  337  git config --global user.email = "2020.cse.asna@ekc.edu.in"
+  338  git add .
+  339  cd ..
+  340  git clone git@github.com:asnashameel/devops-linux.git
+  341  ls
+  342  history
+  343  git config --global user.email = "2020.cse.asna@ekc.edu.in"
+  344  git config --global user.name = "asnashameel"
+  345  git add .
+  346  git config --global --add safe.directory C:/Users
+  347  git add .
+  348  git commit -m "added"
+  349  git add .
+  350  git commit -m "added"
+  351  git add .
+  352  cd ..
+  353  cd devops-linux/
+  354  git push -u origin main
+  355  git add .
+  356  git commit -m "added"
+  357  ls
+  358  history
+  359  git add .
+  360  history >> a.txt
