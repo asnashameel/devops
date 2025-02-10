@@ -1,0 +1,6 @@
+data_constant = ("monday","tuesday","wednesday")
+print(data_constant[1:2])
+print(data_constant[0])
+data_constant_2=tuple(["thursday"])
+print(data_constant+data_constant_2)
+print(list(data_constant))
