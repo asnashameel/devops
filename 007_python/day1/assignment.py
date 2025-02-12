@@ -1,12 +1,8 @@
 import os
-import re
-import csv
 import hashlib
-import unittest
-from unittest.mock import patch
 
 # 1. Automate file creation and deletion in a specified directory
-import os
+
 
 def manage_files(directory, create=True, file_name="example.txt"):
     # Ensure the directory exists before creating or deleting the file
