@@ -36,3 +36,5 @@ match3 = re.search("good.morning",string,re.I | re.DOTALL)
 pattern = r'[k].*'
 match6 = re.findall(pattern,string)
 print(match6)
+
+
